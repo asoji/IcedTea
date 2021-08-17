@@ -1,0 +1,177 @@
+# NOTES:
+# The # Symbol at the start of a line counts as a Comment. To include in dialog, use a \#
+# The . Symbol will cause a pause unless escaped with \. (ex: Mr. Oshiro has a pause, Mr\. Oshiro does not)
+# Newlines automatically create a Page Break, unless there is an {n} command on the previous line
+# Commands: Anything inside of curly braces {...} is a command and should not be translated.
+
+# Inline Text Commands:
+# {~}wavy text{/~}
+# {!}impact text{/!}
+# {>> x}changes speed at which characters are displayed{>>}
+# {# 000000}this text is black{#} (uses HEX color values)
+# {+MENU_BEGIN} inserts the dialog from the MENU_BEGIN value (in English, "CLIMB")
+# {n} creates a newline, without a page break
+# {0.5} creates a 0.5 second pause
+# {big}this text is large{/big}
+
+# Gameplay Control Commands (should never change)
+# {trigger x} this triggers an in-game event
+# {anchor} controls the visual position of the textbox in-game
+
+# Language (id,label)
+	LANGUAGE=english,English
+	ICON=Icons/canadian-english.png
+	ORDER=0
+
+# Font (Face, Base Size)
+# Use BMFONT to generate the .fnt and image files
+	FONT=Renogare,64
+
+# Done loading Meta Data
+	BEGIN=true
+
+	CH6_ENDING=
+		[MADELINE left surprised]
+		How did we do that?
+
+		[MADELINE left normal]
+		If we can climb like that, maybe{n}we can still reach the summit!
+		
+		[BADELINE right worriedAlt]
+		You still want to climb the {+MOUNTAIN}?
+
+		[BADELINE right worried]
+		Why would we go back up there?
+
+		{trigger 0 Old Lady enters right}
+
+		[GRANNY right normal]
+		It's good to see you two playing nice.
+
+		[MADELINE left sad]
+		Hey, thanks for talking some sense into me earlier.
+
+		[GRANNY right normal]
+		Don't mention it.
+		I'm glad I can still be useful every now and then.
+
+		{portrait none}
+		{*}{+MADELINE}!!!{/*}
+
+		{trigger 1 Theo enters left}
+		
+		[THEO left worried]
+		{+MADELINE}! You're okay!
+
+		[THEO left wtf]
+		I ran down to help, but it looks like you're doing fine.
+		
+		[MADELINE right normal]
+		Thanks, {+THEO}.
+
+		[MADELINE right distracted]
+		Honestly, maybe that fall was what I needed.
+		
+		{trigger 8 theo stops being tired}
+		[THEO left wtf]
+		Is this the {+PART_OF_YOU} that you were talking about?
+
+		[THEO left excited]
+		She's like an adorable goth {+MADELINE}!
+
+		[BADELINE right angry]
+		Hi.
+
+		[MADELINE right sad]
+		You were right, {+THEO}.
+		I shouldn't be afraid of her.
+
+		[MADELINE right normal]
+		If her and I work together,{n}I think we can still finish the climb.
+
+		[THEO left excited]
+		That's so rad!
+
+		[BADELINE right angry]
+		Wait, {0.4}{*}no{/*}.
+
+		[BADELINE right worried]
+		...I didn't agree to this.
+
+		{trigger 2 Madeline turns to the right}
+
+		[BADELINE right worriedAlt]
+		You said we'd talk about things first.
+
+		[MADELINE left sad]
+		You're right.
+		I understand that you're scared.
+		
+		[MADELINE left distracted]
+		But we both know that this is something we want to do.
+
+		[MADELINE left normal]
+		We have to try one last time.
+
+		{trigger 7 Theo raises fist}
+
+		[THEO left yolo]
+		Yeah! You've got this!
+		
+		[BADELINE right worried]
+		I don't know...
+
+		[BADELINE right worriedAlt]
+		We were so close, and then we, uh, fell...
+
+		[BADELINE right worried]
+		The {+MOUNTAIN} tore us apart.
+
+		[MADELINE left upset]
+		Yeah, that happened.
+
+		[MADELINE left sad]
+		But I have to believe we can put that behind us.
+		I have to believe we're capable of this.
+
+		{trigger 5 Wait a bit}
+
+		[GRANNY right normal]
+		It's not a bad idea.
+
+		{trigger 3 badeline turns right}
+
+		[GRANNY right normal]
+		It'll still be difficult, mind you.
+		But I'm amazed you got as far as{n}you did, butting heads like you were.
+		I reckon you can make it if you cooperate.
+
+		[BADELINE right worried flip]
+		...
+
+		{trigger 4 badeline turns left}
+
+		[BADELINE right worriedAlt]
+		Okay. 
+
+		[BADELINE right worried]
+		I'll try.
+
+		{trigger 5 Wait a bit}
+
+		[THEO left normal]
+		Can I help?
+
+		{trigger 6 Madeline turns to the left}
+
+		[MADELINE right distracted]
+		You've already done so much for me.
+
+		[THEO left wtf]
+		Let me hold your bag at least.
+
+		[MADELINE right normal]
+		Good idea.
+
+		[MADELINE right determined]
+		{>> 0.2}This won't take long.{>>}

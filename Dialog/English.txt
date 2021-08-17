@@ -1,0 +1,164 @@
+# NOTES:
+# The # Symbol at the start of a line counts as a Comment. To include in dialog, use a \#
+# The . Symbol will cause a pause unless escaped with \. (ex: Mr. Oshiro has a pause, Mr\. Oshiro does not)
+# Newlines automatically create a Page Break, unless there is an {n} command on the previous line
+# Commands: Anything inside of curly braces {...} is a command and should not be translated.
+
+# Inline Text Commands:
+# {~}wavy text{/~}
+# {!}impact text{/!}
+# {>> x}changes speed at which characters are displayed{>>}
+# {# 000000}this text is black{#} (uses HEX color values)
+# {+MENU_BEGIN} inserts the dialog from the MENU_BEGIN value (in English, "CLIMB")
+# {n} creates a newline, without a page break
+# {0.5} creates a 0.5 second pause
+# {big}this text is large{/big}
+
+# Gameplay Control Commands (should never change)
+# {trigger x} this triggers an in-game event
+# {anchor} controls the visual position of the textbox in-game
+
+# Language (id,label)
+	LANGUAGE=english,English
+	ICON=Icons/canadian-english.png
+	ORDER=0
+
+# Font (Face, Base Size)
+# Use BMFONT to generate the .fnt and image files
+	FONT=Renogare,64
+
+# Done loading Meta Data
+	BEGIN=true
+
+	CH6_ENDING=
+
+        {trigger 2 Madeline turns to the right}
+
+		[MADELINE left upset]
+		{# D678DB}Badeline{#}{0.5} that's iced tea
+
+        {trigger 0 Old Lady enters right}
+        
+        {trigger 1 Theo enters left}
+
+		[BADELINE right normal]
+		yea, so
+
+        {trigger 2 Madeline turns to the right}
+		
+		[MADELINE left upset]
+		{# D678DB}BADELINE{#} IT'S ICED TEA
+        iced tea doesnt go IN A {~}MICROWAVE{/~}
+
+		[BADELINE right normal]
+		yea, and it finished cooking
+        it requires microwaves to be shot at the liquid, to cook it through
+
+        {trigger 8 theo stops being tired}
+
+        [MADELINE left upset]
+        what
+
+        [BADELINE right normal]
+        so it wasn't frozen in the middle
+
+        [MADELINE left angry]
+        FROZEN??
+
+        [BADELINE right worried]
+        yes?{0.5} something wrong?
+
+        [MADELINE left panic]
+        i cannot fucking take this. your tiny fucking brain.
+
+        [BADELINE right scoff]
+        i was cooking it in the microwave
+
+        [MADELINE left panic]
+        WHY,{0.5} please tell me
+
+        [BADELINE right worried]
+        was i supposed to do it in the oven?
+
+        [MADELINE left angry]
+        {*}YOU WEREN'T SUPPOSED TO COOK IT
+        NO MICROWAVE, NO OVEN, {1.0}O{0.25}N{0.25}L{0.25}Y{0.25} K{0.25}E{0.25}T{0.25}T{0.25}L{0.25}E{/*}
+
+        [BADELINE right normal]
+        but {+MADELINE}, if you don't use the microwave or oven, how do you {~}cook{/~} it?
+
+        [MADELINE left angry]
+        YOU BOIL {0.25}W{0.25}A{0.25}T{0.25}E{0.25}R
+        DO YOU GET {0.5}YOU DUMB FUCK
+
+        [BADELINE right upset]
+        no?
+
+        [MADELINE left panic]
+        {+GRANNY} help me
+
+		[GRANNY right normal]
+		i cannot
+
+        [MADELINE left panic]
+        huuahicnso
+        YOU {~}BOIL{/~} WATER
+        HFISNOSBCKS
+        [MADELINE left upset]
+        my head {1.0}hurts.
+
+        [BADELINE right angry]
+        genuinely dont not see the problem {+MADELINE}
+        [BADELINE right scoff]
+        just put in the microwave, tea go warm, {~}smile{/~}
+
+        [GRANNY right normal]
+        or alternatively, {0.5}put it in the fireplace, {0.5}same result
+
+        [MADELINE left angry]
+        {+GRANNY} NO
+
+        [GRANNY right normal]
+        {+GRANNY} yes
+
+        [BADELINE right scoff]
+        what's the issue with {~}cooking{/~} it
+
+        [MADELINE left upset]
+		{# D678DB}BADELINE{#} {0.5}I {0.5}SWEAR {0.5}TO {0.5}GOD
+        YOU USE THE KETTLE TO {*}HEAT THE WATER{/*}
+        {*}A KETTLE{/*}
+        DO YOU HAVE ONE, {1.0}ANSWER ME {# D678DB}BADELINE{#}
+        [MADELINE left angry]
+        {# D678DB}BADELINE{#} {# D678DB}BADELINE{#} {# D678DB}BADELINE{#} {# D678DB}BADELINE{#} {# D678DB}BADELINE{#} {# D678DB}BADELINE{#} {# D678DB}BADELINE{#} {# D678DB}BADELINE{#} {# D678DB}BADELINE{#} {# D678DB}BADELINE{#} {# D678DB}BADELINE{#} {# D678DB}BADELINE{#} {# D678DB}BADELINE{#} {# D678DB}BADELINE{#} {# D678DB}BADELINE{#}
+        you {*}BOIL WATER. MAKE NORMAL TEA WITH THAT. THEN REMOVE TEA BAG. ADD COLD WATER. ADD SUGAR AND MILK
+        DONT PUT IT IN A FUCKING MICROWAVE YOU IDIOT THAT COULD BE THE LAST THING THAT GOES IN THAT MICROWAVE AND THE LAST THING THAT ISNT BURNING IN YOUR HOUSE{/*}
+        you {*}DONT{/*} put it {*}IN A FUCKING MICROWAVE. IT'S NOT HARD TO DO{/*}
+
+        [GRANNY right normal]
+        you're supposed to preheat the oven at 200 degrees then put it on a tray and leave it in the oven for 5-10 minutes at 200 degrees then when the ice is at the desired level of crispness take out the oven and enjoy but make sure you dont touch it it might be hot
+
+        [MADELINE left angry]
+        {*}DONT DONT DOOOOOOOONT COOK THE FUCKING ICE TEA {# D678DB}BADELINE{#}. THAT IS NOT HOW YOU "WARM" UP AN ICE FUCKING TEA{/*}
+
+        [GRANNY right mock]
+        what, are you trying to cook ice
+
+        [MADELINE left panic]
+        FUCKING LISTEN TO ME
+
+        [BADELINE right scoff]
+        {+theo} likes it microwaved
+
+        [MADELINE left panic]
+        I'VE SAID SO MUCH
+        {*}I AM GOING TO EXPLODE{/*}
+
+        [GRANNY right mock]
+        recieve isn't a word, {n}daily facts with {+GRANNY}
+
+        [BADELINE right scoff]
+        recieve is a word, {n}daily facts with {# D678DB}Badeline{#}
+
+        [THEO left wtf]
+        what the hap is fuckening
