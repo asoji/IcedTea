@@ -3,4 +3,5 @@ A Celeste dialogue edit in Reflection, a recreation of the original discord Iced
 
 the meme here:
 
-https://cdn.discordapp.com/attachments/631654541942849536/812892873879322664/video0_6.mp4
+https://user-images.githubusercontent.com/30705254/129801858-6421d4f3-eb29-45aa-bf1f-d9d8c84d29b4.mp4
+
