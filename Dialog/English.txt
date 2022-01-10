@@ -82,13 +82,13 @@
 
         [MADELINE left angry]
         {*}YOU WEREN'T SUPPOSED TO COOK IT
-        NO MICROWAVE, NO OVEN, {1.0}O{0.25}N{0.25}L{0.25}Y{0.25} K{0.25}E{0.25}T{0.25}T{0.25}L{0.25}E{/*}
+        NO MICROWAVE, NO OVEN, {1.0}O{0.10}N{0.10}L{0.10}Y{0.10} K{0.10}E{0.10}T{0.10}T{0.10}L{0.10}E{/*}
 
         [BADELINE right normal]
         but {+MADELINE}, if you don't use the microwave or oven, how do you {~}cook{/~} it?
 
         [MADELINE left angry]
-        YOU BOIL {0.25}W{0.25}A{0.25}T{0.25}E{0.25}R
+        YOU BOIL {0.10}W{0.10}A{0.10}T{0.10}E{0.10}R
         DO YOU GET {0.5}YOU DUMB FUCK
 
         [BADELINE right upset]
@@ -105,7 +105,7 @@
         YOU {~}BOIL{/~} WATER
         HFISNOSBCKS
         [MADELINE left upset]
-        my head {1.0}hurts.
+        my head {0.75}hurts.
 
         [BADELINE right angry]
         genuinely dont not see the problem {+MADELINE}
